@@ -14,7 +14,7 @@ using namespace std;
 
 int main()
 {
-    double rentMortgage, phones, internetService, utilities, cable, monthlyTotal, annualTotal;
+    double rentMortgage, phones, internetService, utilities, cable, monthlyTotal, annualTotal;      //To hold the value for rent, phone, internet, utility, and cable bills
 
     cout << "Enter the monthly cost for the rent or mortgage payment: ";
     cin >> rentMortgage;
@@ -27,12 +27,12 @@ int main()
     cout << "Enter the monthly cost for the cable bill: ";
     cin >> cable;
 
-    monthlyTotal = (rentMortgage + phones + internetService + utilities + cable);
-    annualTotal = (monthlyTotal * 12);
+    monthlyTotal = (rentMortgage + phones + internetService + utilities + cable);       //To calculate the monthly expenses by finding the sum of the individual monthly costs
+    annualTotal = (monthlyTotal * 12);      //To calculate the annual expenses by multiplying the monthly expenses by 12, (each month of the year)
 
     cout << "\n" << "Total monthly cost of these expenses: " << monthlyTotal;
     cout << "\n" << "Total annual cost of these expenses: " << annualTotal << "\n";
-
+    return 0;
 
 }
 
